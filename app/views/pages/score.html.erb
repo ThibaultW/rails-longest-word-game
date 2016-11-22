@@ -1,0 +1,6 @@
+<h1>Your result:</h1>
+<p>Elapsed time: <%= @result[:time] %></p>
+<p>French translation: <%= @result[:translation] %></p>
+<h3>Your final score: <%= @result[:score] %><h3>
+<h1><%= @result[:message] %></h1>
+<%= link_to "Start a new game", game_path %>

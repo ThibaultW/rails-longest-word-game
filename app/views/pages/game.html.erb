@@ -1,0 +1,10 @@
+<h1>Longest Word Game</h1>
+<% @grid.each do |letter| %>
+  <%= letter %>
+<% end %>
+<form action="/score">
+  <input type="hidden" name="grid" value=<%= @grid.join %>>
+  <input type="hidden" name="start_time" value=<%= @start_time.to_f %>>
+  <input type="text" name="attempt" placeholder="Enter your attempt here...">
+  <input type="submit" value="Check your attempt">
+</form>
